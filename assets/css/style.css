@@ -273,7 +273,7 @@ html{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
 }
 .title-inspire::after{
     position: absolute;
@@ -303,47 +303,57 @@ html{
     opacity: 0.75;
 }
 .image-box{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
 }
-.pic-fuji{
-    width: 619px; 
+.image-wrap-full{
+    grid-column: span 3;
     height: 354px;
+}
+.image-wrap-small{
+    grid-column: span 2;
+    height: 283px;
+}
+.pic-inspire-full{
+    width: 100%;
+    height: 354px;
+    object-fit: cover;
+}
+.pic-inspire-small{
+    width: 100%;
+    height: 283px;
+    object-fit: cover;
 }
 .image-wrap{
     position: relative;
 }
-.image-title{
+.image-wrap::after{
+    display: block;
     position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.40) ;
+    top: 0;
     left: 0;
-    bottom: 0;
-    padding-left: 29px;
-    padding-bottom: 27px;
+    z-index: 2;
+}
+.image-title{
+    display: block;
+    position: absolute;
     color: #FFF;
     font-family: Lato;
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    padding-left: 29px;
+    padding-bottom: 27px;
 }
-.pic-kyoto{
-    width: 635px;
-    height: 354px;
-    background: rgba(21, 24, 36, 0.40);
-}
-.pic-tokyo{
-    width: 415px;
-    height: 283px;
-    background: rgba(21, 24, 36, 0.40);
-}
-.pic-niigata{
-    width: 415px;
-    height: 283px;;
-    background: rgba(21, 24, 36, 0.40);
-}
-.pic-sapporo{
-    width: 415px;
-    height: 283px;
-    background: rgba(21, 24, 36, 0.40);
-}
+/*конец стилей карточек вдохновения*/
+
+
