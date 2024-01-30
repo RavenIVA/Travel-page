@@ -362,8 +362,9 @@ html{
     max-width: 1271px;
     flex-shrink: 0;
     margin: 0 auto;
-    margin-bottom: 152px;
+    margin-bottom: 139px;
     gap:77px;
+    justify-content: center;
 }
 .box-cards{
     display: flex;
@@ -397,4 +398,77 @@ html{
     font-weight: 400;
     line-height: 24px; /* 150% */
     padding-bottom: 94px;
+}
+/*конец секции префектур*/
+
+.wrap-places{
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 144px;
+}
+.places-title{
+    position: relative;
+    color: #102746;
+    font-family: Lato;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 54px;
+    padding-bottom: 10px;
+}
+.places-title::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    width: 253px;
+    stroke-width: 2px;
+    background: #006DFE;
+}
+.wrap-places-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 58px 52px;
+    justify-content: center;
+}
+.places-card{
+    display: flex;
+    flex-direction: column;
+    width: 392px;
+    height: 567px;
+    flex-shrink: 0;
+}
+.pic-place{
+    width: 100%;
+    height: 377px;
+    object-fit: cover;    
+    margin-bottom: 45px;
+}
+.info-place{
+    color: #102746;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-bottom: 31px;
+}
+.see-btn{
+    width: 118px;
+    height: 42px;
+    flex-shrink: 0;
+    background-color:#006DFE;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    cursor: pointer;
+}
+.see-btn:hover{
+    opacity: 0.75;
 }
