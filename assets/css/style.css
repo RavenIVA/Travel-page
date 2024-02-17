@@ -54,6 +54,16 @@ html{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 999;
+    transition: 0.2s;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+.header_active{
+    z-index: 999;
+    background: rgb(14, 29, 40);
+    opacity: 0.75;
 }
 .header-wrapper{
     display: flex;
@@ -522,4 +532,21 @@ html{
     background: url(../img/svg/comment.svg) no-repeat top 21px right;
     padding: 16px 23px 15px 0;
     margin-right: 25px;
+}
+/*конец секции про топовые места*/
+
+.video-wrap{
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.video-box{
+    padding-top:56.25% ;
+}
+.video-element{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
